@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1-formularz-html5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="https://formspree.io/mrozmaksymilian@gmail.com" method="POST">
+        <label>
+            <span>Imię:</span>
+            <input type="text" name="imie" required>
+        </label>
+        <label>
+            <span>Nazwisko:</span>
+            <input type="text" name="nazwisko">
+        </label>
+        <label>
+            <span>E-mail:</span>
+            <input type="email" name="mail">
+        </label>
+        <label>
+            <span>Telefon:</span>
+            <input type="number" name="telefon" >
+        </label>
+        <span>Wybierz miasto:</span>
+        <select name="miasto" required>
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+        </select>
+        <label>
+            <span>Płeć:</span>
+            <input type="radio" name="plec" value="ona">Kobieta
+            <input type="radio" name="plec" value="on">Mężczyzna
+        </label>
+        <label>
+            <span class="inline">Wyrażam zgodę na przetwarzanie moich danych osobowych:</span>
+            <input type="checkbox" name="zgoda-na-dane-osobowe" required>
+        </label>
+        <label>
+            <span>Wiadomość:</span>
+            <textarea name="wiadomosc" class="wiadomosc"></textarea>
+        </label>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
