@@ -11,7 +11,7 @@ span {
     display: block;
 }
 
-.inline {
+.inline, [for="ona"], [for="on"] {
     display: inline;
 }
 
